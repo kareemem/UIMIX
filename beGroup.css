@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    --mainFont:'Seymour One', sans-serif;
+    --secondFont:'Playfair Display', serif;
+}
+.pointer{
+    cursor: pointer;
+}
+/* navbar */
+
+.navbar-toggler-icon{
+    background-color: rgb(58, 90, 197) !important;
+}
+.bg-body-tertiary{
+    background-color: rgb(14, 29, 77) !important;
+}
+nav{
+    z-index: 99999;
+}
+
+
+/* header */
+.footerHeader{
+    background-color: rgba(28, 52, 133, 0.9);
+}
+header{
+    background-size: cover;
+}
+
+header h2{
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: var(--mainFont);
+}
+header h1{
+    font-weight: 800;
+    font-size: 1.25rem;
+    font-family: var(--mainFont);
+
+}
+header p{
+    font-weight: 800;
+    font-size: 1rem;
+}
+header .col-4 h5 span{
+    position: relative;
+    font-weight: 100;
+    font-size: 1.5625rem;
+}
+
+header .col-4 h6{
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: var(--secondFont);
+}
+.zero::after{
+    content: "/";
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10px;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+}
+
+#btnUp i{
+    font-size: 1.5625rem;
+}
+
+#btnUp{
+    background-color: rgb(14, 29, 77,0.8) ;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999999;
+}
+/* about */
+
+#about h4{
+    color: rgb(8, 8, 150);
+    font-size: 1.5625rem;
+    font-family: var(--mainFont);
+}
+#about h3{
+    font-size: 1.5625rem;
+    font-family: var(--mainFont);
+}
+#about .groundAbout{
+    background-image: url('img/utt.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* LEADING */
+#leading{
+    background-image: url('img/leading.png');
+}
+#leading ul{
+    display: flex;
+}
+#leading ul li{
+    list-style-type: none;
+}
+#leading ul::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+}
+#leading .hrAfter::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100px;
+    height: 5px;
+    z-index: 2;
+    background-color: rgb(0, 0, 155);
+}
+#leading img{
+    width: 330px;
+    height: 200px;
+}
+#leading .projectLeading h6{
+    background-color: rgb(0, 0, 255 ,0.8);
+    font-family: var(--mainFont);
+    color: white;
+    width: 330px;
+    font-size: .9375rem;
+}
+
+#leading h2{
+    color: rgb(8, 8, 150);
+    font-family: var(--secondFont);
+    font-weight: 800;
+}
+@media screen and (max-width: 1024px){
+    #leading ul{
+        display: inline-block;
+    }
+    #leading ul li{
+        margin-top: 5px;
+    }
+    #leading ul::after{
+        opacity: 0;
+    }
+    #leading .hrAfter::after{
+        opacity: 0;
+    }
+
+}
+
+/* products */
+
+#products h2{
+    color: rgb(8, 8, 150);
+    font-family: var(--mainFont);
+    font-size: 1.25rem;
+}
+#products .productAfter::after{
+    content: '';
+    background-color: rgb(255, 202, 44);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+/* project */
+#project{
+    background-image: url('img/backproject.png');
+}
+#project button{
+    border: 2px solid rgb(13, 203, 233) ;
+    font-family: var(--secondFont);
+}
+#project h2{
+    font-family: var(--mainFont);
+}
+#project h2::after{
+    content: '';
+    background-color: rgb(255, 202, 44);
+    width: 20%;
+    height: 3px;
+    position: absolute;
+    bottom: -8px;
+    left: 40%;
+}
+/* talking */
+#talking h2{
+    color: rgb(8, 8, 150);
+    font-family: var(--mainFont);
+    font-size: 1.25rem;
+}
+#talking .talkingAfter::after{
+    content: '';
+    background-color: rgb(255, 202, 44);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+/* footer */
+footer{
+    background-color: rgb(14, 29, 77) ;
+    color: white;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer .icon ul li{
+    display: inline-block;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+footer p{
+    font-family: var(--secondFont);
+}
+footer a{
+    font-family: var(--secondFont);
+}
+
